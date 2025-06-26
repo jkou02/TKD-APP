@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    tools:context=".MainActivity">
+
+    <!-- Botón rectangular grande central -->
+    <Button
+        android:id="@+id/bigRectButton"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:text="Grande"
+        android:backgroundTint="#FF0000" />
+
+    <!-- Botón circular 1 (usando MaterialButton) -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/circleButton1"
+        android:layout_width="@dimen/circle_button_size"
+        android:layout_height="@dimen/circle_button_size"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:cornerRadius="@dimen/circle_button_radius"
+        android:text="Circular 1"
+        android:backgroundTint="#0000FF"/>
+
+    <!-- Botón circular 2 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/circleButton2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:text="Circular 2"
+        app:cornerRadius="40dp"
+        android:backgroundTint="#FF0000" />
+
+    <!-- Botón rectangular pequeño arriba derecha -->
+    <Button
+        android:id="@+id/smallRectButton1"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:text="Pequeño 1"
+        android:backgroundTint="#0000FF" />
+
+    <!-- Botón rectangular mediano abajo izquierda -->
+    <Button
+        android:id="@+id/mediumRectButton"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="20dp"
+        android:text="Mediano"
+        android:backgroundTint="#FF0000" />
+
+    <!-- Botón rectangular dinámico -->
+    <Button
+        android:id="@+id/dynamicRectButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Dinámico"
+        android:backgroundTint="#0000FF" />
+
+</RelativeLayout>

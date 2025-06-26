@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="circle_button_size">100dp</dimen>
+    <dimen name="circle_button_radius">50dp</dimen>
+    <!-- Otras dimensiones para tus botones -->
+</resources>
